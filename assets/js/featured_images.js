@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Number of items to display
     const itemCount = 5;
     const imagePaths = [
-        'assets/images/carousel/start_screen.png',
-        'assets/images/carousel/hub_area.png',
-        'assets/images/carousel/fountain.png',
-        'assets/images/carousel/celtic.png',
-        'assets/images/carousel/elite.png',
+        'assets/images/Carousel/start_screen.png',
+        'assets/images/Carousel/hub_area.png',
+        'assets/images/Carousel/fountain.png',
+        'assets/images/Carousel/celtic.png',
+        'assets/images/Carousel/elite.png',
     ];
     let currentIndex = 0;
 
