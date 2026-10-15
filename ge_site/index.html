@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UnderVeil - Home</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="assets/images/icon.gif" type="image/gif" >
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="assets/images/underveil_logo.png" alt="Logo UnderVeil" class="logo"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="download.html">Download</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <button id="color-theme-toggle" class="btn btn-outline" title="Switch color theme"><i class="fas fa-palette"></i></button>
+        <button id="theme-toggle" class="btn btn-outline" title="Toggle theme"><i class="fas fa-sun"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>UnderVeil</h1>
+        <p>Experience the brand new story driven roguelike</p>
+        <a href="download.html" class="btn btn-large">Download Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's UnderVeil Section -->
+  <section class="whats-underveil">
+    <div class="container">
+      <div class="whats-underveil-grid">
+        <div class="whats-underveil-content">
+          <h2>What's UnderVeil?</h2>
+          <p>Discover a dark and mysterious world filled with captivating gameplay and compelling storytelling. 
+            UnderVeil combines challenging combat mechanics with an immersive narrative that adapts to your choices.</p>
+          <p>Every decision matters as you progress through the dungeons, encounter weird characters, fight godlike bosses and put an end to the flame 
+            that has been burning for far too long. Whether you're a seasoned gamer or new to the genre, UnderVeil offers an unforgettable experience.</p>
+          <a href="gallery.html" class="btn btn-large">Learn More</a>
+        </div>
+        <div class="whats-underveil-image">
+          <img src="assets/images/underveil_menu_start.png" alt="UnderVeil Experience">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Images Carousel -->
+  <section class="featured-products">
+    <div class="container">
+      <h2>Featured Images</h2>
+      <div class="carousel-container">
+        <button class="carousel-arrow carousel-prev" id="carousel-prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <div class="carousel-wrapper">
+          <div class="carousel-track" id="carousel-track">
+            <!-- Carousel items will be loaded here dynamically -->
+            <div class="carousel-loading">Loading featured products...</div>
+          </div>
+        </div>
+        
+        <button class="carousel-arrow carousel-next" id="carousel-next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      
+      <div class="carousel-dots" id="carousel-dots">
+        <!-- Dots will be added dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Mythologies Section -->
+  <section class="mythologies">
+    <div class="container">
+      <h2>Mythologies of the Veil</h2>
+      <p class="mythologies-intro">Beneath the veil, the old pantheons still listen. UnderVeil brings together multiple mythologies, and each one aids you in its own way, with a different role to play in your journey.</p>
+
+      <div class="mythology-grid">
+        <div class="mythology-card">
+          <div class="mythology-icon"><i class="fas fa-landmark"></i></div>
+          <div class="mythology-body">
+            <span class="mythology-role">Omens · In-run buffs</span>
+            <h3>Roman Mythology</h3>
+            <p>The Roman gods speak through Omens. Read the signs and claim their favour: each Omen grants a buff that empowers you for the rest of your run, shaping how you fight and survive.</p>
+          </div>
+        </div>
+
+        <div class="mythology-card">
+          <div class="mythology-icon"><i class="fas fa-bolt"></i></div>
+          <div class="mythology-body">
+            <span class="mythology-role">Statues · Permanent progression</span>
+            <h3>Greek Mythology</h3>
+            <p>The Greek gods have fallen silent, their statues lying broken across the hub. Rebuild them to restore your bond with each god and earn permanent upgrades that carry over from run to run.</p>
+          </div>
+        </div>
+
+        <!-- To add another mythology, copy a .mythology-card block:
+        <div class="mythology-card">
+          <div class="mythology-icon"><i class="fas fa-ICON"></i></div>
+          <div class="mythology-body">
+            <span class="mythology-role">Mechanic · What it does</span>
+            <h3>Name Mythology</h3>
+            <p>Description.</p>
+          </div>
+        </div>
+        -->
+
+        <div class="mythology-card mythology-card-unknown">
+          <div class="mythology-icon"><i class="fas fa-question"></i></div>
+          <div class="mythology-body">
+            <span class="mythology-role">Undiscovered</span>
+            <h3>More Await…</h3>
+            <p>Rome and Greece are only the beginning. Other pantheons still slumber beneath the veil, waiting to be discovered, each with its own way of aiding those brave enough to seek them out.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Crafting & Resources Section -->
+  <section class="crafting">
+    <div class="container">
+      <h2>Spoils of the Deep</h2>
+      <p class="crafting-intro">Nothing you find in the dungeons goes to waste. Bring your resources back and turn them into the tools, allies and power you need to push deeper on your next run.</p>
+
+      <div class="crafting-loop">
+        <div class="loop-step"><i class="fas fa-dungeon"></i><span>Delve</span></div>
+        <i class="fas fa-chevron-right loop-arrow"></i>
+        <div class="loop-step"><i class="fas fa-gem"></i><span>Gather</span></div>
+        <i class="fas fa-chevron-right loop-arrow"></i>
+        <div class="loop-step"><i class="fas fa-hammer"></i><span>Craft</span></div>
+        <i class="fas fa-chevron-right loop-arrow"></i>
+        <div class="loop-step"><i class="fas fa-arrow-trend-up"></i><span>Grow stronger</span></div>
+      </div>
+
+      <div class="crafting-grid">
+        <div class="crafting-card">
+          <i class="fas fa-hammer"></i>
+          <h3>Craft Supplies</h3>
+          <p>Turn raw materials into helpful items that give you an edge when the dungeon turns against you.</p>
+        </div>
+        <div class="crafting-card">
+          <i class="fas fa-coins"></i>
+          <h3>Hire Hunters</h3>
+          <p>Pay NPCs to venture out and hunt for rare resources on your behalf, bringing back what you can't find alone.</p>
+        </div>
+        <div class="crafting-card">
+          <i class="fas fa-flask"></i>
+          <h3>Mysterious Potions</h3>
+          <p>Trade with the Merchant for strange brews that improve your attributes. Don't ask what's in them.</p>
+        </div>
+        <div class="crafting-card">
+          <i class="fas fa-wand-sparkles"></i>
+          <h3>Unlock Skills</h3>
+          <p>Invest your spoils to learn new skills, opening up fresh ways to fight and survive.</p>
+        </div>
+      </div>
+
+      <p class="crafting-more">…and more secrets waiting to be uncovered.</p>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h2>Why Play UnderVeil?</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <i class="fas fa-book-open"></i>
+          <h3>Dense Story</h3>
+          <p>UnderVeil contains a rich story, inspired by various pieces of fiction that we like. 
+            Explore the world and see if you can find any easter eggs we hidden throughout the game.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-redo-alt"></i>
+          <h3>Highly Replayable</h3>
+          <p>Procedurally varied runs, unexpected encounters and multiple endings keep every playthrough fresh.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-gamepad"></i>
+          <h3>Free to Play</h3>
+          <p>For now, Underveil will be free, so get in the train, and enjoy it while you can, because it won't be for long!</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-fire"></i>
+          <h3>Fastpace Gameplay</h3>
+          <p>Fast-paced gameplay requires quick decision-making, as it is crucial when dealing with waves of enemies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>UnderVeil</h2>
+          <p>A roguelike done right</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-envelope"></i> info@UnderVeil.com</p>
+          <p><i class="fas fa-phone"></i> 925944154</p>
+          <p><i class="fas fa-map-marker-alt"></i> Soul Society, Somewhere Street, Nº6, Japan</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 UnderVeil. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/featured_images.js"></script>
+</body>
+</html>

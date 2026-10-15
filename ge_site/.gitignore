@@ -1,0 +1,5 @@
+# Old PHP/MySQL backend (kept locally only: contains DB config and user uploads)
+_legacy_php/
+
+# Game builds are hosted on itch.io
+game/

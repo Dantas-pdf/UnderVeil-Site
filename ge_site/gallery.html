@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UnderVeil - Gallery</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="assets/images/icon.gif" type="image/gif" >
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="assets/images/underveil_logo.png" alt="Logo UnderVeil" class="logo"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="download.html">Download</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <button id="color-theme-toggle" class="btn btn-outline" title="Switch color theme"><i class="fas fa-palette"></i></button>
+        <button id="theme-toggle" class="btn btn-outline" title="Toggle theme"><i class="fas fa-sun"></i></button>
+      </div>
+    </div>
+  </header>
+  <!-- Gallery Header -->
+  <div class="gallery-container">
+    <div class="gallery-header">
+      <h1>UnderVeil Gallery</h1>
+      <p>Explore how UnderVeil came to be along its journey from concept to creation.</p>
+      <p>Here you'll find concept art, old and new character designs, and the evolution of the game's environments.</p>
+    </div>
+
+    <!-- Main Character Section -->
+    <div class="gallery-section">
+      <h2>Main Character</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openModal(this)">
+          <img src="assets/images/down.png" alt="Main Character - Initial Design">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title">Equus</div>
+            <div class="gallery-item-description">Initial Design</div>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openModal(this)">
+          <img src="assets/images/horse_fat111.png" alt="Main Character - Second Design">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title">Equus</div>
+            <div class="gallery-item-description">Second Design</div>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openModal(this)">
+          <img src="assets/images/FirstOne.png" alt="Main Character - Third Design">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title">Equus</div>
+            <div class="gallery-item-description">Third Design</div>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openModal(this)">
+          <img src="assets/images/lastoneig2.png" alt="Main Character - Final Design">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title">Equus</div>
+            <div class="gallery-item-description">Final Design</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Areas Section -->
+    <div class="gallery-section">
+      <h2>Areas & Locations</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openModal(this)">
+          <img src="assets/images/Gallery/hub_gallery.png" alt="Dark Forest">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title">Dark Forest</div>
+            <div class="gallery-item-description">The starting area of the game</div>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openModal(this)">
+          <img src="assets/images/Gallery/Dungeon1.pngss" alt="Forsaken Caverns">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title">Forsaken Caverns</div>
+            <div class="gallery-item-description">First Dungeon</div>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openModal(this)">
+          <img src="assets/images/Gallery/Forest.png" alt="Fates Forest">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title">Fates Forest</div>
+            <div class="gallery-item-description">Unknown area</div>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openModal(this)">
+          <img src="assets/images/abyssal_foundry.png" alt="Abyssal Foundry">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title">Abyssal Foundry</div>
+            <div class="gallery-item-description">Final chapter area</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Items Section -->
+    <div class="gallery-section">
+      <h2>Items & Equipment</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openModal(this)">
+          <img src="assets/images/Gallery/Long_Cleaver.png" alt="Long Cleaver">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title">Long Cleaver</div>
+            <div class="gallery-item-description">Common weapon</div>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openModal(this)">
+          <img src="assets/images/Gallery/Cursed_Sword.png" alt="Cursed Blade">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title">Cursed Blade</div>
+            <div class="gallery-item-description">Rare weapon</div>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openModal(this)">
+          <img src="assets/images/Gallery/Sake.png" alt="Cursed Sake">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title">Cursed Sake</div>
+            <div class="gallery-item-description">Dungeon Item</div>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openModal(this)">
+          <img src="assets/images/Gallery/Flower.png" alt="Crystal Flower">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title">Crystal Flower</div>
+            <div class="gallery-item-description">Collectible material</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-title" id="modalTitle">Title</span>
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+      <span class="modal-nav modal-prev" onclick="prevImage()">&#10094;</span>
+      <img class="modal-image" id="modalImage" src="" alt="">
+      <span class="modal-nav modal-next" onclick="nextImage()">&#10095;</span>
+    </div>
+  </div>
+  
+    <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>UnderVeil</h2>
+          <p>A roguelike done right</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-envelope"></i> info@UnderVeil.com</p>
+          <p><i class="fas fa-phone"></i> 925944154</p>
+          <p><i class="fas fa-map-marker-alt"></i> Soul Society, Somewhere Street, Nº6, Japan</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 UnderVeil. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/gallery.js"></script>
+</body>
+</html>
