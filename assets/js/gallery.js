@@ -1,102 +1,92 @@
+// Gallery lightbox. Each image is a link to the full picture, so the page works
+// without JavaScript; with it, links open in a <dialog> that steps through the
+// images of the same section.
 document.addEventListener('DOMContentLoaded', () => {
-  initGallery()
+  const dialog = document.getElementById('lightbox')
+  if (!dialog || typeof dialog.showModal !== 'function') return
+
+  const stage = dialog.querySelector('.lightbox-stage')
+  // The image element is created here so the page never ships an empty <img>
+  const image = document.createElement('img')
+  image.className = 'lightbox-image'
+  image.alt = ''
+  stage.insertBefore(image, dialog.querySelector('.lightbox-next'))
+  const titleEl = dialog.querySelector('.lightbox-title')
+  const descriptionEl = dialog.querySelector('.lightbox-description')
+  const countEl = dialog.querySelector('.lightbox-count')
+
+  let items = []
+  let index = 0
+  let opener = null
+
+  function show(i) {
+    index = (i + items.length) % items.length
+    const item = items[index]
+    const img = item.querySelector('img')
+    image.src = item.querySelector('.gallery-link').href
+    image.alt = img.alt
+    titleEl.textContent = item.querySelector('.gallery-item-title').textContent
+    descriptionEl.textContent = item.querySelector('.gallery-item-description').textContent
+    countEl.textContent = `${index + 1} / ${items.length}`
+  }
+
+  function open(link) {
+    const item = link.closest('.gallery-item')
+    const section = item.closest('.gallery-section')
+    items = Array.from(section.querySelectorAll('.gallery-item'))
+    opener = link
+    show(items.indexOf(item))
+    dialog.classList.toggle('lightbox-single', items.length < 2)
+    document.body.classList.add('lightbox-open')
+    dialog.showModal()
+  }
+
+  document.querySelectorAll('.gallery-link').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault()
+      open(link)
+    })
+  })
+
+  dialog.querySelector('.lightbox-close').addEventListener('click', () => dialog.close())
+  dialog.querySelector('.lightbox-prev').addEventListener('click', () => show(index - 1))
+  dialog.querySelector('.lightbox-next').addEventListener('click', () => show(index + 1))
+
+  // Clicking the dark area around the image closes the lightbox
+  dialog.addEventListener('click', (e) => {
+    if (e.target === dialog || e.target === stage) dialog.close()
+  })
+
+  dialog.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+      e.preventDefault()
+      show(index - 1)
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault()
+      show(index + 1)
+    }
+  })
+
+  // Swipe between images on touch screens
+  let touchX = null
+  let touchY = null
+  stage.addEventListener('touchstart', (e) => {
+    touchX = e.touches[0].clientX
+    touchY = e.touches[0].clientY
+  }, { passive: true })
+  stage.addEventListener('touchend', (e) => {
+    if (touchX === null) return
+    const dx = e.changedTouches[0].clientX - touchX
+    const dy = e.changedTouches[0].clientY - touchY
+    touchX = null
+    if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy)) return
+    show(dx < 0 ? index + 1 : index - 1)
+  })
+
+  // Esc closes natively; either way, restore scrolling and focus
+  dialog.addEventListener('close', () => {
+    document.body.classList.remove('lightbox-open')
+    image.removeAttribute('src')
+    if (opener) opener.focus()
+  })
 })
-
-let currentModalIndex = 0
-let allGalleryItems = []
-
-function initGallery() {
-  // Get all gallery items
-  allGalleryItems = document.querySelectorAll('.gallery-item')
-
-  // Close modal when clicking outside the image
-  document.getElementById('imageModal').addEventListener('click', (e) => {
-    if (e.target.id === 'imageModal') {
-      closeModal()
-    }
-  })
-
-  // Keyboard navigation
-  document.addEventListener('keydown', (e) => {
-    const modal = document.getElementById('imageModal')
-    if (modal.style.display === 'block') {
-      if (e.key === 'ArrowLeft') prevImage()
-      if (e.key === 'ArrowRight') nextImage()
-      if (e.key === 'Escape') closeModal()
-    }
-  })
-}
-
-function openModal(element) {
-  const modal = document.getElementById('imageModal')
-  const modalImage = document.getElementById('modalImage')
-  const modalTitle = document.getElementById('modalTitle')
-
-  // Get the image and title from the clicked item
-  const img = element.querySelector('img')
-  const title = element.querySelector('.gallery-item-title')
-  const description = element.querySelector('.gallery-item-description')
-
-  // Set modal content
-  modalImage.src = img.src
-  modalImage.alt = img.alt
-  modalTitle.textContent = title ? title.textContent : 'Gallery Item'
-
-  // Find current index
-  currentModalIndex = Array.from(allGalleryItems).indexOf(element)
-
-  modal.style.display = 'block'
-  document.body.style.overflow = 'hidden'
-}
-
-function closeModal() {
-  const modal = document.getElementById('imageModal')
-  modal.style.display = 'none'
-  document.body.style.overflow = 'auto'
-}
-
-function prevImage() {
-  currentModalIndex--
-  if (currentModalIndex < 0) {
-    currentModalIndex = allGalleryItems.length - 1
-  }
-  updateModalImage()
-}
-
-function nextImage() {
-  currentModalIndex++
-  if (currentModalIndex >= allGalleryItems.length) {
-    currentModalIndex = 0
-  }
-  updateModalImage()
-}
-
-function updateModalImage() {
-  if (allGalleryItems.length === 0) return
-
-  const currentItem = allGalleryItems[currentModalIndex]
-  const img = currentItem.querySelector('img')
-  const title = currentItem.querySelector('.gallery-item-title')
-
-  const modalImage = document.getElementById('modalImage')
-  const modalTitle = document.getElementById('modalTitle')
-
-  modalImage.src = img.src
-  modalImage.alt = img.alt
-  modalTitle.textContent = title ? title.textContent : 'Gallery Item'
-
-  // Add a smooth fade effect
-  modalImage.style.opacity = '0.5'
-  setTimeout(() => {
-    modalImage.style.opacity = '1'
-  }, 50)
-}
-
-// Add smooth transition to modal image
-const style = document.createElement('style')
-style.textContent = `
-  .modal-image {
-    transition: opacity 0.3s ease;
-  }
-`
-document.head.appendChild(style)

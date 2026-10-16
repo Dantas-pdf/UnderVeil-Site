@@ -3,16 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UnderVeil - About</title>
+  <title>About UnderVeil: the team, the story and the FAQ</title>
+  <meta name="description" content="UnderVeil began as a school project in Lazarim and grew into a story-driven pixel-art roguelike. Meet the team and find answers about platforms, the free demo and system requirements.">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="icon" href="assets/images/icon.gif" type="image/gif" >
+  <link rel="icon" href="assets/images/brand/favicon.svg" type="image/svg+xml">
 </head>
 <body>
+  <script>
+    // Apply saved theme before first paint (purple on dark is the default)
+    try {
+      var savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'light' || (!savedTheme && window.matchMedia('(prefers-color-scheme: light)').matches)) document.body.classList.add('light-theme');
+      if (localStorage.getItem('colorTheme') === 'yellow') document.body.classList.add('color-theme-gold');
+    } catch (e) {}
+  </script>
 <header>
   <div class="container">
     <div class="logo">
-      <a href="index.html"><img src="assets/images/underveil_logo.png" alt="Logo UnderVeil" class="logo"></a>
+      <a href="index.html"><img src="assets/images/brand/underveil-logo-160.png" alt="UnderVeil home" class="logo" width="160" height="240"></a>
     </div>
     <nav>
       <ul>
@@ -24,8 +33,8 @@
       </ul>
       </nav>
       <div class="user-actions">
-        <button id="color-theme-toggle" class="btn btn-outline" title="Switch color theme"><i class="fas fa-palette"></i></button>
-        <button id="theme-toggle" class="btn btn-outline" title="Toggle theme"><i class="fas fa-sun"></i></button>
+        <button id="color-theme-toggle" class="btn btn-outline" title="Switch color theme" aria-label="Switch color theme"><i class="fas fa-palette" aria-hidden="true"></i></button>
+        <button id="theme-toggle" class="btn btn-outline" title="Toggle light or dark mode" aria-label="Toggle light or dark mode"><i class="fas fa-sun" aria-hidden="true"></i></button>
       </div>
     </div>
   </header>
@@ -34,153 +43,136 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-text">
+        <h1>About UnderVeil</h1>
+        <p class="about-lede">A story-driven pixel-art roguelike, made by Framer and Vope from our headquarters in Lazarim.</p>
+
         <h2>Our Story</h2>
-        <p>Beginning only as a school project, UnderVeil initially started as a small project, 
-          but as time went on and our passion grew, UnderVeil evolved into something much larger than we initially imagined.</p>
-        
-        <p>In this game, we tested everything, from our capabilities, our imagination, our ways to adapt to certain situations, everything. 
-          We don't think we could've had a better idea than this, to create something we loved as kids, is an amazing feeling, its more than only a game, 
-          its our game.</p>
-        
-        <h2>Tools Used</h2>
-        <p>Underveil was created using innumerous tools but it would not have been possible without the help of these main tools:</p>
+        <p>UnderVeil began as a small school project. As time went on and our passion grew, it became something much bigger than we ever imagined.</p>
+
+        <p>Making it tested everything: our skills, our imagination, how we adapt when things go wrong. We couldn't have picked a better idea. Creating the kind of game we loved as kids is an amazing feeling. It's more than just a game; it's our game.</p>
+
+        <p class="about-credits">Drawn in <a href="https://www.aseprite.org/" target="_blank" rel="noopener noreferrer">Aseprite<span class="visually-hidden"> (opens in a new tab)</span></a>, with sounds from <a href="https://freesound.org/" target="_blank" rel="noopener noreferrer">Freesound.org<span class="visually-hidden"> (opens in a new tab)</span></a>, and published on <a href="https://itch.io/" target="_blank" rel="noopener noreferrer">itch.io<span class="visually-hidden"> (opens in a new tab)</span></a>.</p>
       </div>
-      
-      <div class="about-image">
-        <img src="assets/images/base.jpg" alt="UnderVeil Team">
-        <div class="image-caption">Our headquarters in Lazarim</div>
-      </div>
-    </div>
-    
-    <div class="tools-section">
-      <div class="tools-grid">
-        <div class="tool-card">
-          <div class="tool-image">
-            <img src="assets/images/aseprite_logo.png"  alt="Aseprite">
+
+      <figure class="equus-evolution">
+        <div class="equus-pair">
+          <div class="equus-frame">
+            <img src="assets/images/equus/equus-1-first.png" alt="Equus's first design: a flat, blocky horse head on a dark grey body" width="398" height="501">
+            <span>First design</span>
           </div>
-          <h3><a href="https://www.aseprite.org/" target="_blank">Aseprite</a></h3>
-          <p>Pixel art animation software</p>
-        </div>
-        
-        <div class="tool-card">
-          <div class="tool-image">
-            <img src="assets/images/itch.io_logo.png" alt="Itch.io">
+          <i class="fas fa-arrow-right equus-arrow" aria-hidden="true"></i>
+          <div class="equus-frame">
+            <img src="assets/images/equus/equus-4-today.png" alt="Equus today: a shaded horse-headed knight in steel armour with a red cape" width="249" height="248">
+            <span>Today</span>
           </div>
-          <h3><a href="https://itch.io/" target="_blank">Itch.io</a></h3>
-          <p>Game distribution platform</p>
         </div>
-        
-        <div class="tool-card">
-          <div class="tool-image">
-            <img src="assets/images/freesound_logo.jpg" alt="Freesound.org">
-          </div>
-          <h3><a href="https://freesound.org/" target="_blank">Freesound.org</a></h3>
-          <p>Collaborative sound library</p>
-        </div>
-      </div>
+        <figcaption>Equus, our main character, then and now.</figcaption>
+      </figure>
     </div>
 
-    <div class="about-grid">
-      <div class="about-text">
-    </div>
-    </div>
-    
     <div class="team-section">
       <h2>Our Team</h2>
       <div class="team-grid">
         <div class="team-member">
-          <img src="assets/images/Young-Toji.jpg" alt="CEO">
+          <img src="assets/images/team/framer.jpg" alt="Framer's avatar" width="441" height="560" loading="lazy">
           <h3>Framer</h3>
           <p>Main Developer</p>
         </div>
         
         <div class="team-member">
-          <img src="assets/images/yuta.jpg" alt="CTO">
+          <img src="assets/images/team/vope.jpg" alt="Vope's avatar" width="224" height="225" loading="lazy">
           <h3>Vope</h3>
-          <p>Co-Developer/Backer</p>
+          <p>Co-Developer and Backer</p>
         </div>
       </div>
     </div>
 
-    <!-- New FAQ Section -->
     <div class="faq-section">
       <h2>Frequently Asked Questions</h2>
-      
+
       <div class="faq-container">
-        <div class="faq-item">
-          <div class="faq-question">
+        <details class="faq-item" id="faq-what">
+          <summary class="faq-question">
             <h3>What is UnderVeil?</h3>
-            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-          </div>
+            <span class="faq-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+          </summary>
           <div class="faq-answer">
-            <p>UnderVeil is a 2D pixel art roguelike game where you must defeat a maddened antagonist. Each run is procedurally generated, ensuring a unique experience every time you play. With challenging combat, strategic item choices, and meaningful storytelling, we hope to offer hours of immersive gameplay.</p>
+            <p>UnderVeil is a story-driven 2D pixel-art roguelike for Windows. You fight your way down through procedurally generated dungeons, face godlike bosses and a maddened antagonist, and try to put an end to the flame that has been burning for far too long. Challenging combat, strategic item choices and a story shaped by your decisions make every run different.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-question">
+        <details class="faq-item" id="faq-roguelike">
+          <summary class="faq-question">
             <h3>How does the roguelike system work?</h3>
-            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-          </div>
+            <span class="faq-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+          </summary>
           <div class="faq-answer">
-            <p>UnderVeil features a permadeath roguelike system where each run is procedurally generated. When you die, you start fresh with a new run, but you'll earn permanent upgrades and unlock new content that carries over between runs. This creates a rewarding progression system where every attempt brings you closer to mastering the game.</p>
+            <p>Each run is procedurally generated and death is permanent: when you fall, you start a new run. But nothing is wasted. The Roman gods grant <strong>Omens</strong>, buffs that last for the rest of a run. Rebuilding the broken Greek <strong>Statues</strong> in the hub earns permanent upgrades. And the resources you bring back let you craft supplies, hire hunters, trade for the Merchant's potions and unlock new skills. Every attempt takes you a little deeper.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-question">
+        <details class="faq-item" id="faq-platforms">
+          <summary class="faq-question">
             <h3>What platforms can I play UnderVeil on?</h3>
-            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-          </div>
+            <span class="faq-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+          </summary>
           <div class="faq-answer">
-            <p>UnderVeil is currently available only on Windows. We intent to expand to other platforms such as Consoles, Linux, and Mac in the future. But with our budget and experience, we are focusing on delivering the best possible experience on Windows first.</p>
+            <p>UnderVeil is currently available only on Windows. We'd love to bring it to Linux, Mac and consoles in the future, but with our budget and experience we're focusing on making the Windows version the best it can be first. <a href="download.html#system-requirements">Check the system requirements</a>.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-question">
-            <h3>Is UnderVeil free to play?</h3>
-            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-          </div>
+        <details class="faq-item" id="faq-free">
+          <summary class="faq-question">
+            <h3>Is UnderVeil free?</h3>
+            <span class="faq-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+          </summary>
           <div class="faq-answer">
-            <p>No, UnderVeil is not free to play. The game will be available for purchase, but we offer a free demo version that allows you to experience a portion of the game before deciding to buy the full version.</p>
+            <p>The demo is free: it lets you play part of the game before you decide to buy. The full game will be available for purchase. <a href="download.html">Get the free demo</a>.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-question">
-            <h3>How does the pixel art style enhance the gameplay?</h3>
-            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-          </div>
+        <details class="faq-item" id="faq-pc">
+          <summary class="faq-question">
+            <h3>Can my PC run UnderVeil?</h3>
+            <span class="faq-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+          </summary>
           <div class="faq-answer">
-            <p>Pixel art while not only being less demanding on hardware than high-resolution graphics, it also adds a unique charm and clarity to the gameplay. 
-              It allows players to focus on the mechanics and strategy without being distracted by overly complex visuals.</p>
+            <p>Very likely. UnderVeil is built to run on modest hardware: the minimum is a 1.8 GHz dual-core processor, 2 GB of RAM and DirectX 9 graphics, and it needs only 200 MB of space. <a href="download.html#system-requirements">See the full requirements</a>.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-question">
+        <details class="faq-item" id="faq-offline">
+          <summary class="faq-question">
             <h3>Can I play UnderVeil offline?</h3>
-            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-          </div>
+            <span class="faq-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+          </summary>
           <div class="faq-answer">
-            <p>Yes, you can play UnderVeil offline! The game is completely offline and doesn't require an internet connection to enjoy the full experience.</p>
+            <p>Yes. UnderVeil is completely offline and never needs an internet connection.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-question">
+        <details class="faq-item" id="faq-endings">
+          <summary class="faq-question">
             <h3>Does the game have multiple endings?</h3>
-            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-          </div>
+            <span class="faq-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+          </summary>
           <div class="faq-answer">
-            <p>Yes, UnderVeil will have multiple endings based on the player's choices. You will have different upgrades, different weapons, different paths, and your own ending.</p>
+            <p>Yes. UnderVeil will have multiple endings based on your choices: different upgrades, different weapons and different paths lead to your own ending.</p>
           </div>
-        </div>
+        </details>
       </div>
     </div>
   </div>
 </section>
+
+  <section class="closing-cta">
+    <div class="container">
+      <h2>See what we've been building</h2>
+      <p>Take a few runs beneath the Veil. The demo is free, and the full game is on its way.</p>
+      <a href="download.html" class="btn btn-large">Play the free demo</a>
+      <p class="hero-meta">Windows · Free demo on itch.io</p>
+    </div>
+  </section>
 
   <footer>
     <div class="container">
@@ -213,6 +205,5 @@
   </footer>
 
   <script src="assets/js/theme.js"></script>
-  <script src="assets/js/about.js"></script>
 </body>
 </html>

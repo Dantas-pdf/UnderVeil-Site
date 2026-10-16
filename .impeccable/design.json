@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-16T01:29:42Z",
+  "title": "Design System: UnderVeil",
+  "extensions": {
+    "colorMeta": {
+      "veil-magenta": {
+        "role": "primary",
+        "displayName": "Veil Magenta",
+        "canonical": "#d946ef",
+        "tonalRamp": [
+          "oklch(15% 0.06 322)",
+          "oklch(27% 0.12 322)",
+          "oklch(39% 0.18 322)",
+          "oklch(51% 0.23 322)",
+          "oklch(63% 0.26 322)",
+          "oklch(74% 0.19 322)",
+          "oklch(85% 0.11 322)",
+          "oklch(95% 0.04 322)"
+        ]
+      },
+      "orchid-glow": {
+        "role": "primary",
+        "displayName": "Orchid Glow",
+        "canonical": "#e879f9",
+        "tonalRamp": [
+          "oklch(15% 0.06 324)",
+          "oklch(26% 0.11 324)",
+          "oklch(37% 0.17 324)",
+          "oklch(48% 0.22 324)",
+          "oklch(59% 0.25 324)",
+          "oklch(71% 0.18 324)",
+          "oklch(83% 0.10 324)",
+          "oklch(95% 0.04 324)"
+        ]
+      },
+      "relic-gold": {
+        "role": "secondary",
+        "displayName": "Relic Gold",
+        "canonical": "#ffd700",
+        "tonalRamp": [
+          "oklch(15% 0.03 95)",
+          "oklch(27% 0.06 95)",
+          "oklch(39% 0.09 95)",
+          "oklch(51% 0.12 95)",
+          "oklch(63% 0.14 95)",
+          "oklch(75% 0.16 95)",
+          "oklch(88% 0.18 95)",
+          "oklch(95% 0.08 95)"
+        ]
+      },
+      "crypt-charcoal": {
+        "role": "neutral",
+        "displayName": "Crypt Charcoal",
+        "canonical": "#1e1c1c",
+        "tonalRamp": [
+          "oklch(15% 0.003 20)",
+          "oklch(22% 0.003 20)",
+          "oklch(33% 0.003 20)",
+          "oklch(45% 0.003 20)",
+          "oklch(57% 0.003 20)",
+          "oklch(70% 0.003 20)",
+          "oklch(83% 0.003 20)",
+          "oklch(95% 0.003 20)"
+        ]
+      },
+      "abyss-black": {
+        "role": "neutral",
+        "displayName": "Abyss Black",
+        "canonical": "#0a0a0a",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(37% 0 0)",
+          "oklch(48% 0 0)",
+          "oklch(60% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "reliquary-panel": {
+        "role": "neutral",
+        "displayName": "Reliquary Panel",
+        "canonical": "#1e1e1e",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(23% 0 0)",
+          "oklch(34% 0 0)",
+          "oklch(46% 0 0)",
+          "oklch(58% 0 0)",
+          "oklch(70% 0 0)",
+          "oklch(83% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "slate-well": {
+        "role": "neutral",
+        "displayName": "Slate Well",
+        "canonical": "#2a2a2a",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(27% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(60% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "bone-white": {
+        "role": "neutral",
+        "displayName": "Bone White",
+        "canonical": "#f5f5f5",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(27% 0 0)",
+          "oklch(39% 0 0)",
+          "oklch(51% 0 0)",
+          "oklch(63% 0 0)",
+          "oklch(75% 0 0)",
+          "oklch(87% 0 0)",
+          "oklch(97% 0 0)"
+        ]
+      },
+      "ash-gray": {
+        "role": "neutral",
+        "displayName": "Ash Gray",
+        "canonical": "#b0b0b0",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(27% 0 0)",
+          "oklch(39% 0 0)",
+          "oklch(51% 0 0)",
+          "oklch(63% 0 0)",
+          "oklch(76% 0 0)",
+          "oklch(86% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "success-green": {
+        "role": "neutral",
+        "displayName": "Success Green",
+        "canonical": "#4caf50",
+        "tonalRamp": [
+          "oklch(15% 0.04 145)",
+          "oklch(27% 0.08 145)",
+          "oklch(39% 0.11 145)",
+          "oklch(51% 0.14 145)",
+          "oklch(65% 0.15 145)",
+          "oklch(76% 0.12 145)",
+          "oklch(87% 0.07 145)",
+          "oklch(95% 0.03 145)"
+        ]
+      },
+      "error-red": {
+        "role": "neutral",
+        "displayName": "Error Red",
+        "canonical": "#ff5252",
+        "tonalRamp": [
+          "oklch(15% 0.05 25)",
+          "oklch(27% 0.10 25)",
+          "oklch(39% 0.15 25)",
+          "oklch(51% 0.19 25)",
+          "oklch(66% 0.21 25)",
+          "oklch(76% 0.15 25)",
+          "oklch(87% 0.08 25)",
+          "oklch(95% 0.03 25)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page H1s (download, about). The home hero uses the logo artwork instead of display text."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section H2s with the accent underline bar; the lead section scales up to 2.9rem."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Card H3s."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Paragraphs in Ash Gray; intros capped at 700px."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase button text."
+      }
+    },
+    "shadows": [
+      {
+        "name": "rest",
+        "value": "0 5px 15px rgba(0, 0, 0, 0.2)",
+        "purpose": "Cards and form containers at rest."
+      },
+      {
+        "name": "lifted",
+        "value": "0 15px 30px rgba(0, 0, 0, 0.3)",
+        "purpose": "Card hover, paired with translateY(-5px to -10px)."
+      },
+      {
+        "name": "header",
+        "value": "0 2px 10px rgba(0, 0, 0, 0.5)",
+        "purpose": "Sticky header edge."
+      },
+      {
+        "name": "download-cta",
+        "value": "0 6px 18px rgba(0,0,0,0.25)",
+        "purpose": "Large download buttons."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-state",
+        "value": "0.3s ease",
+        "purpose": "Hover lifts, colour shifts, nav underline growth."
+      },
+      {
+        "name": "ease-carousel",
+        "value": "transform 0.5s ease",
+        "purpose": "Carousel slide."
+      },
+      {
+        "name": "ease-theme",
+        "value": "0.25s ease",
+        "purpose": "Theme switch background/colour fade and page reveal."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "576px"
+      },
+      {
+        "name": "tablet",
+        "value": "768px"
+      },
+      {
+        "name": "download-stack",
+        "value": "900px"
+      },
+      {
+        "name": "laptop",
+        "value": "992px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Filled accent action; lifts on hover.",
+      "html": "<button class=\"ds-btn-primary\">Download Now</button>",
+      "css": ".ds-btn-primary { display: inline-block; padding: 10px 20px; background: #d946ef; color: #0a0a0a; border: none; border-radius: 4px; cursor: pointer; font: 600 0.9rem 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.3s ease; } .ds-btn-primary:hover { background: #e879f9; transform: translateY(-2px); } .ds-btn-primary:focus-visible { outline: 2px solid #f5f5f5; outline-offset: 2px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary action; fills with the accent on hover.",
+      "html": "<button class=\"ds-btn-outline\">Learn More</button>",
+      "css": ".ds-btn-outline { display: inline-block; padding: 10px 20px; background: transparent; color: #d946ef; border: 2px solid #d946ef; border-radius: 4px; cursor: pointer; font: 600 0.9rem 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.3s ease; } .ds-btn-outline:hover { background: #d946ef; color: #0a0a0a; transform: translateY(-2px); } .ds-btn-outline:focus-visible { outline: 2px solid #f5f5f5; outline-offset: 2px; }"
+    },
+    {
+      "name": "Download Button",
+      "kind": "button",
+      "refersTo": "button-download",
+      "description": "The download page's filled primary action, with its quiet underlined secondary link.",
+      "html": "<div class=\"ds-dl\"><a class=\"ds-btn-download\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><polyline points=\"7 10 12 15 17 10\"/><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"3\"/></svg> Get the free demo on itch.io</a><a class=\"ds-dl-secondary\" href=\"#\">Check if your PC can run it</a></div>",
+      "css": ".ds-dl { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; } .ds-btn-download { display: inline-flex; align-items: center; gap: 10px; padding: 18px 28px; background: #d946ef; color: #0a0a0a; border-radius: 10px; font-size: 1.05rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; text-decoration: none; box-shadow: 0 6px 18px rgba(0,0,0,0.25); transition: all 0.3s ease; } .ds-btn-download:hover { background: #e879f9; transform: translateY(-2px); } .ds-btn-download:focus-visible, .ds-dl-secondary:focus-visible { outline: 2px solid #d946ef; outline-offset: 3px; } .ds-dl-secondary { padding: 10px 0; font-weight: 600; color: #f5f5f5; text-decoration: underline; text-decoration-color: #d946ef; text-decoration-thickness: 2px; text-underline-offset: 6px; } .ds-dl-secondary:hover { color: #d946ef; }"
+    },
+    {
+      "name": "Feature Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Lifted, outlined exhibit panel with an accent icon.",
+      "html": "<div class=\"ds-card\"><svg width=\"40\" height=\"40\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#d946ef\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 19.5A2.5 2.5 0 0 1 6.5 17H20\"/><path d=\"M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z\"/></svg><h3>Dense Story</h3><p>A rich story with easter eggs hidden throughout the game.</p></div>",
+      "css": ".ds-card { text-align: center; padding: 30px; max-width: 300px; border-radius: 8px; background: #1e1e1e; border: 1px solid #d946ef; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; } .ds-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.3); } .ds-card svg { margin-bottom: 20px; } .ds-card h3 { font-size: 1.5rem; margin: 0 0 15px; color: #f5f5f5; } .ds-card p { margin: 0; color: #b0b0b0; line-height: 1.6; }"
+    },
+    {
+      "name": "Mythology Card (Undiscovered)",
+      "kind": "custom",
+      "description": "Locked-content variant: transparent, dashed outline, faded icon ring.",
+      "html": "<div class=\"ds-myth\"><div class=\"ds-myth-icon\">?</div><div><h3>More Await…</h3><p>Other pantheons still slumber beneath the veil.</p></div></div>",
+      "css": ".ds-myth { display: flex; gap: 25px; align-items: flex-start; padding: 30px; max-width: 480px; border-radius: 8px; background: transparent; border: 1px dashed #d946ef; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; } .ds-myth-icon { flex-shrink: 0; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 2px dashed #d946ef; color: #d946ef; font-size: 1.8rem; opacity: 0.7; } .ds-myth h3 { font-size: 1.5rem; margin: 0 0 12px; color: #f5f5f5; } .ds-myth p { margin: 0; color: #b0b0b0; line-height: 1.7; }"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Sunken field with accent outline.",
+      "html": "<label class=\"ds-field\"><span>Your Name</span><input type=\"text\" placeholder=\"Wanderer\"></label>",
+      "css": ".ds-field { display: block; max-width: 360px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; } .ds-field span { display: block; margin-bottom: 8px; font-weight: 600; color: #f5f5f5; } .ds-field input { width: 100%; box-sizing: border-box; padding: 12px; border: 1px solid #d946ef; border-radius: 4px; font-size: 1rem; background: #2a2a2a; color: #f5f5f5; transition: border-color 0.3s ease; } .ds-field input:focus-visible { border-color: #d946ef; outline: 2px solid #d946ef; outline-offset: 3px; outline-offset: 1px; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "description": "Sticky header links with a growing accent underline.",
+      "html": "<nav class=\"ds-nav\"><a class=\"active\" href=\"#\">Home</a><a href=\"#\">Download</a><a href=\"#\">Gallery</a><a href=\"#\">About</a><a href=\"#\">Contact</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 20px; padding: 16px 20px; background: #0a0a0a; box-shadow: 0 2px 10px rgba(0,0,0,0.5); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; } .ds-nav a { position: relative; color: #f5f5f5; font-weight: 600; padding: 5px 10px; text-decoration: none; transition: color 0.3s ease; } .ds-nav a::after { content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 2px; background: #d946ef; transition: width 0.3s ease; } .ds-nav a:hover, .ds-nav a.active { color: #d946ef; } .ds-nav a:hover::after, .ds-nav a.active::after { width: 100%; } .ds-nav a:focus-visible { outline: 2px solid #d946ef; outline-offset: 2px; border-radius: 4px; }"
+    },
+    {
+      "name": "FAQ Item",
+      "kind": "custom",
+      "description": "Native details/summary; the accent plus rotates into a cross when open.",
+      "html": "<details class=\"ds-faq\" open><summary><span class=\"ds-faq-q\">Can my PC run UnderVeil?</span><span class=\"ds-faq-t\" aria-hidden=\"true\">+</span></summary><p>Very likely. The minimum is a 1.8 GHz dual-core processor, 2 GB of RAM and DirectX 9 graphics. <a href=\"#\">See the full requirements</a>.</p></details>",
+      "css": ".ds-faq { max-width: 560px; background: #1e1e1e; border: 1px solid #d946ef; border-radius: 8px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; } .ds-faq summary { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px; cursor: pointer; list-style: none; border-radius: 8px; } .ds-faq summary::-webkit-details-marker { display: none; } .ds-faq summary:focus-visible { outline: 2px solid #d946ef; outline-offset: 3px; } .ds-faq-q { font-size: 1.1rem; font-weight: 700; color: #f5f5f5; } .ds-faq-t { color: #d946ef; font-size: 1.4rem; line-height: 1; transition: transform 0.3s ease; } .ds-faq[open] .ds-faq-t { transform: rotate(45deg); } .ds-faq p { margin: 0; padding: 0 20px 20px; color: #b0b0b0; line-height: 1.7; } .ds-faq a { color: #d946ef; text-decoration: underline; text-underline-offset: 3px; }"
+    },
+    {
+      "name": "Spec Table",
+      "kind": "custom",
+      "description": "One comparison table for system requirements; never split into cards plus lists.",
+      "html": "<div class=\"ds-spec\"><table><thead><tr><td></td><th scope=\"col\">Minimum<span>Playable, around 60 FPS</span></th><th scope=\"col\">Recommended<span>Smooth, 60 FPS or higher</span></th></tr></thead><tbody><tr><th scope=\"row\">Memory</th><td>2 GB RAM</td><td>4 GB RAM</td></tr><tr><th scope=\"row\">Storage</th><td>200 MB available space</td><td>200 MB available space</td></tr></tbody></table></div>",
+      "css": ".ds-spec { max-width: 640px; padding: 6px 12px; background: #1e1e1e; border: 1px solid #d946ef; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; } .ds-spec table { width: 100%; border-collapse: collapse; text-align: left; } .ds-spec th, .ds-spec td { padding: 14px 20px; vertical-align: top; border-bottom: 1px solid #2a2a2a; } .ds-spec tbody tr:last-child th, .ds-spec tbody tr:last-child td { border-bottom: none; } .ds-spec thead th { font-size: 1.1rem; color: #f5f5f5; border-bottom: 1px solid #d946ef; } .ds-spec thead th span { display: block; margin-top: 2px; font-size: 0.85rem; font-weight: 400; color: #b0b0b0; } .ds-spec tbody th { font-weight: 600; color: #f5f5f5; } .ds-spec tbody td { color: #b0b0b0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Veil's Reliquary",
+    "overview": "The site is a dark display case for the game. Near-black surfaces recede so the pixel art, screenshots and mythology can be the exhibits, and a single magenta accent edges each one, like the trim on a reliquary. The site's job is to frame artifacts from beneath the Veil, never to compete with them.\n\nDensity is moderate and centred. Sections stack in a single column inside a 1200px case, alternating between two depths of black so the scroll reads as a passage of chambers. Cards are lifted, outlined panels that rise when you reach for them, so they feel tactile, like picking an item up off a pedestal.\n\nThe system ships with a theme switcher. **Purple on dark is canonical**: it is the identity every new surface is designed and judged in. Gold on dark and the two light variants remain as user-selectable alternates and must keep working, but they never lead a design decision.",
+    "keyCharacteristics": [
+      "Two-step black background (Crypt Charcoal sections, Abyss Black bands for header, footer and alternating sections).",
+      "One magenta accent, used for actions, icons, outlines and the short underline bar beneath section headings.",
+      "Lifted, outlined cards that rise 5–10px on hover with a deepening shadow.",
+      "The home hero is the game's key art with the logo artwork as its title; page H1s are heavy (800) system sans, everything else plain.",
+      "Real in-game pixel art as the main imagery."
+    ],
+    "rules": [
+      {
+        "name": "The One Relic Rule",
+        "body": "Only one accent hue is live at a time. Magenta and gold are themes, not a pair. Never put both on one screen.",
+        "section": "colors"
+      },
+      {
+        "name": "The Theme-Variable Rule",
+        "body": "Accent colors are always read from `--primary-color`, `--primary-dark`, `--on-primary` and `--border-color`, never hard-coded, so all four theme combinations keep working. Purple dark is the `:root` default; gold is the opt-in `body.color-theme-gold`, and `.light-theme` darkens the accent (#a21caf purple, #8a6d00 gold) with white `--on-primary` so it stays readable on white.",
+        "section": "colors"
+      },
+      {
+        "name": "The Underline Bar Rule",
+        "body": "Every section heading carries a short accent bar beneath it: 60×3px under centred headlines, 40×2px under left-aligned headings and footer titles. That bar is the heading's ornament. Don't add others.",
+        "section": "typography"
+      },
+      {
+        "name": "The Neutral Shadow Rule",
+        "body": "Shadows are always black at 0.2–0.5 alpha with a real y-offset. Depth is never a coloured glow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do design every new surface in purple on dark first, then check it in gold and in the light theme.",
+      "Do open the home page on the game's own key art (`assets/images/brand/key-art.png`) with the logo image, not stock footage.",
+      "Do read accent colours from `--primary-color` / `--primary-dark` / `--on-primary` / `--border-color` so the theme switcher keeps working.",
+      "Do give section headings the accent underline bar (60×3px centred, 40×2px left-aligned).",
+      "Do make cards lift on hover with `translateY` plus the Rest → Lifted shadow step.",
+      "Do let real in-game pixel art be the imagery. The reliquary displays the game, it doesn't decorate around it.",
+      "Do end every page on a way to the download: the closing band repeats \"Play the free demo\" and its platform note."
+    ],
+    "donts": [
+      "Don't put white text on Veil Magenta (about 3.8:1) or Relic Gold (about 1.4:1). Text on accent fills is Ink on Accent (#0a0a0a, about 5.3:1 on magenta).",
+      "Don't add tiny uppercase labels above headings. Work that information into the heading or the body; in-game terms (Omens, Statues) are set in accent-coloured semibold inside the description.",
+      "Don't use thick one-side or top accent borders on rounded cards. Keep the uniform 1px outline.",
+      "Don't use coloured glows. Follow the Neutral Shadow Rule.",
+      "Don't show Veil Magenta and Relic Gold together on one screen."
+    ]
+  }
+}

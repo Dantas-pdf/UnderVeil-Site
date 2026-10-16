@@ -25,5 +25,5 @@ python -m http.server 8000
 
 ## Configuration
 
-- **Download link:** set `ITCH_URL` in `assets/js/download.js`.
-- **Contact email:** set `CONTACT_EMAIL` in `assets/js/contact.js`. The form opens the visitor's email app (`mailto:`).
+- **itch.io link:** replace every `https://YOUR-ITCH-USERNAME.itch.io/underveil` (two download buttons in `download.html`, two links in `contact.html`).
+- **Contact email:** there is no team inbox yet, so `CONTACT_EMAIL` in `assets/js/contact.js` is empty and the form copies the message for an itch.io comment. Set it to a real address and the form opens the visitor's email app instead.
